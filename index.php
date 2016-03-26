@@ -10,41 +10,6 @@ $products = $db->get('products');
   <script src="js/jquery-ui.js"></script><meta charset="UTF-8">
 <script src="js/functions.js"></script><meta charset="UTF-8">
   <link rel="stylesheet" href="css/jquery-ui.css">
-  <script>
-function zdr(){
-
-    $( "#popup" ).dialog({width: 600,height:500});
-
-};
-
-
-  </script>
-<script type="text/javascript">
-
-  function validateForm() {
-    var x = document.forms["order"]["firstname"].value;
-    if (x == null || x == "") {
-        alert("Въведете всички данни");
-        return false;
-    }
-     var x = document.forms["order"]["surname"].value;
-    if (x == null || x == "") {
-        alert("Въведете всички данни");
-        return false;
-    }
-     var x = document.forms["order"]["phone"].value;
-    if (x == null || x == "") {
-        alert("Въведете всички данни");
-        return false;
-    }
-     var x = document.forms["order"]["address"].value;
-    if (x == null || x == "") {
-        alert("Въведете всички данни");
-        return false;
-    }
-}
-</script>
-
 <link rel="stylesheet" href="css/stylesheet.css">
 
 
@@ -55,8 +20,8 @@ function zdr(){
 <div id="container">
 
 
-<div id="toppings">
-<div id=toppingContainer>
+<div id="toppings" class="toppingContainer">
+<div id='toppingContainer'>
 <center><h2> Топинги </h2></center>
 <?php
 foreach($products as $product) {
@@ -73,11 +38,12 @@ echo "<img id='".$product['productname']."' class=\"product\" src='".$product['p
 </div>
 
 <div id="order">
-<div id="orderContainer"
+<div id="orderContainer">
 <center><h2>Вашата пица</h2></center>
 <li>Тесто</li>
 <li>Доматен сос </li>
-
+<div id="addedproducts">
+</div>
 <div id="orderNow">
 <img id="orderButton" onclick="zdr()" src="images/poruchai.png"> </img>
 
@@ -101,7 +67,8 @@ echo "<img id='".$product['productname']."' class=\"product\" src='".$product['p
    <input type="text" name="address"><br>
    <br>
 
-   <input type="submit" name="Давай" value="Изпращане"><br>
+   <input type="button" onclick="sendForm();" name="Давай" value="Изпращане"><br>
+   <div style="display: none;"> </div>
 </form>
 </div>
 </div>
