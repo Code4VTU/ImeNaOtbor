@@ -1,6 +1,7 @@
 body{
 
 	margin: 0px;
+background-color: #333333;
 }
 #container{
 margin: 0px auto;
@@ -10,28 +11,29 @@ height: 100%;
 }
 #toppings{
 float:left;
-width: 24%;
+width: 25%;
 height: 100%;
-border-left: 1px solid;
-border-right: 1px solid;
+
+background-image: url("images/background1.jpg");
+
 }
 
 #pizza{
 float: left;
 width: 50%;
 height: 100%;
-
-border-right: 1px solid;
+background-image: url("images/cardboard.jpg");
 
 }
 #order{
 display: inline-block;
-width: 24%;
+width: 25%;
  height: 100%;
 float:left;
+background-image: url("images/background1.jpg");
 
 position:relative;
-border-right: 1px solid;
+
 }
 
 #popup{
