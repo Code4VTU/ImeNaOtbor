@@ -4,7 +4,7 @@ body{
 background-color: #333333;
 }
 #container{
-margin: 0px auto;
+	margin: 0 auto;
 width: 80%;
 height: 100%;
 
@@ -23,6 +23,9 @@ float: left;
 width: 50%;
 height: 100%;
 background-image: url("images/cardboard.jpg");
+-webkit-box-shadow: -4px 0px 17px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 0px 17px 2px rgba(0,0,0,0.75);
+box-shadow: -4px 0px 17px 2px rgba(0,0,0,0.75);
 
 }
 #order{
@@ -33,7 +36,9 @@ float:left;
 background-image: url("images/background1.jpg");
 
 position:relative;
-
+-webkit-box-shadow: -4px 0px 17px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 0px 17px 2px rgba(0,0,0,0.75);
+box-shadow: -4px 0px 17px 2px rgba(0,0,0,0.75);
 }
 
 #popup{
