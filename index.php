@@ -3,7 +3,7 @@
 <title>Pizza Designer 3000</title>
  <script src="js/jquery-1.12.2.js"></script>
   <script src="js/jquery-ui.js"></script><meta charset="UTF-8">
-
+<script src="js/functions.js"></script><meta charset="UTF-8">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <script>
 function zdr(){
@@ -53,22 +53,16 @@ function zdr(){
 <div id="toppings">
 <div id=toppingContainer>
 <center><h2> Топинги </h2></center>
-<img class="product" src="images/ing/tomato.png"></img>
-<img class="product" src="images/ing/mushrooms.png"></img>
-<img class="product" src="images/ing/olives.png"></img>
-<img class="product" src="images/ing/olives.png"></img>
-
-<img class="product" src="images/ing/olives.png"></img>
-<img class="product" src="images/ing/olives.png"></img>
-
-
+<img id='tomato' class="product" src="images/ing/tomato.png" ></img>
+<img id='mushrooms' class="product" src="images/ing/mushrooms.png"></img>
+<img id='bacon' class="product" src="images/ing/olives.png" ></img>
+<img id='olives' class="product" src="images/ing/olives.png"></img>
 </div>
 </div>
 
-<div id="pizza">
+<div class="pizza" id="pizza">
 <div id="pizzPic">
 <img id="pica" src="images/pizza2.png"> </img>
-
 </div>
 </div>
 
