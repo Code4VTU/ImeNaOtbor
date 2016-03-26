@@ -10,9 +10,10 @@ height: 100%;
 }
 #toppings{
 float:left;
-min-width: 25%;
+width: 24%;
 height: 100%;
-
+border-left: 1px solid;
+border-right: 1px solid;
 }
 
 #pizza{
@@ -20,16 +21,17 @@ float: left;
 width: 50%;
 height: 100%;
 
-background-color: green;
+border-right: 1px solid;
 
 }
 #order{
 display: inline-block;
- min-width: 25%;
+width: 24%;
  height: 100%;
 float:left;
-background-color: red;
-position:relative
+
+position:relative;
+border-right: 1px solid;
 }
 
 #popup{
@@ -78,8 +80,12 @@ height: 100%;
 	padding: 8%;
 }
 .product{
-height: 30%;
+	padding: 5%;
+height: 13%;
 
-
-
+}
+#toppingContainer{
+max-width: 30%;
+	padding-top: 20px;
+	display:inline;
 }
