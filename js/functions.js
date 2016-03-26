@@ -1,12 +1,5 @@
 $(document).ready(function(){
     $( ".product" ).draggable({
-        revert: "invalid",
-        containment: '.container',
-        refreshPositions: true,
-        cursor: 'move',
-        drag: function(event, ui) {
-            $('.droppable').addClass('ui-state-highlight');
-        },
         stop: function(event, ui) {
             $('.droppable').removeClass('ui-state-highlight');
             if ( $.ui.ddmanager.drop( $(this).data("draggable"), event ) ) {
@@ -20,12 +13,11 @@ $(document).ready(function(){
 
 
     $( ".pizza" ).droppable({
-        hoverClass: "ui-state-active",
         drop: function( event, ui ) {
             var targetElem = $(this).attr("id");
             $( this )
             .addClass( "ui-state-highlight" )
-            alert(targetElem);
+            console.log(targetElem);
         }
     });
 });
